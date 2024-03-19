@@ -1,0 +1,76 @@
+<link rel="stylesheet" type="text/css" href="createProfile.css">
+<script src="4U.js"></script>
+   <div>
+      <img class="imgsmall" src="../pics/4u.png" alt="You Talk, I Listen" onload="addOptions()">
+   </div>
+   <div class="selectfieldholder">
+      <select required multiple class="selectmultiple" id="agegroup" onchange="updateP4DropDown('agegroup')">
+      </select>
+      <label class="label-selectmultiple">Prefer Acquaintances of Age</label>
+      <p id="agegroupp"></p>
+   </div>
+   <div class="selectfieldholder">
+      <select required multiple class="selectmultiple" id="language" onchange="updateP4DropDown('language')">
+      </select>
+      <label class="label-selectmultiple">Prefer Acquaintances of Languages</label>
+      <p id="languagep"></p>
+   </div>
+   <div class="selectfieldholder">
+      <div>
+         <input id="profanity" required type="number" min=0 max=10 value=0>
+         <label>Tolerance to Profanity (0-10)</label>
+      </div>
+      <div>
+         <p class="psubscript">0  - I can't listen to Profanity atall</p>
+         <p class="psubscript">10 - I am totally fine with Bad Language</p>
+      </div>
+   </div>
+   <div class="selectfieldholder">
+      <div>
+         <input id="confidentiality" required type="number" min=0 max=10 value=10>
+         <label>Confidentiality (0-10)</label>
+      </div>
+      <div>
+         <p class="psubscript">0  - Don't Trust Me with Your Secrets!</p>
+         <p class="psubscript">10 - I Don't Gossip atall</p>
+      </div>
+   </div>
+   <div class="selectfieldholder">
+      <select required multiple class="selectmultiple" id="ilisten" onchange="updateP4DropDown('ilisten')">
+         <option>Accomplishments</option>
+         <option>Complaints</option>
+         <option>Questions</option>
+         <option>Regrets</option>
+         <option>Special Occasions</option>
+         <option>How the Day Was</option>
+      </select>
+      <label class="label-selectmultiple">I Prefer to Listen to</label>
+      <p id="ilistenp"></p>
+   </div>
+   <div class="selectfieldholder">
+      <select required multiple class="selectmultiple" id="conversationalstyle" onchange="updateP4DropDown('conversationalstyle')">
+         <option>Act as Sounding Board</option>
+         <option>Appreciate</option>
+         <option>Argue and Debate</option>
+         <option>Brainstorm and Help in Understanding</option>
+         <option>Console as Needed</option>
+         <option>Encourage and Motivate</option>
+         <option>Empathize</option>
+         <option>Give Advice</option>
+         <option>Give Suggestions</option>
+         <option>Help Identify Alternatives</option>
+         <option>Just Listen</option>
+         <option>Listen Attentively</option>
+         <option>Provide Guidance</option>
+         <option>Share My Opinion</option>
+      </select>
+      <label class="label-selectmultiple">My Listening Style</label>
+      <p id="conversationalstylep"></p>
+   </div>
+   <div class="selectfieldholder">
+      <select required multiple class="selectmultiple" id="topics" onchange="topicsDynamicUpdate('Listen')">
+      </select>
+      <label class="label-selectmultiple">Topics I Prefer to Listen/Discuss</label>
+      <p id="topicsp"></p>
+   </div>
+

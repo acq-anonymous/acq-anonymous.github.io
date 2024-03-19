@@ -1,0 +1,71 @@
+<link rel="stylesheet" type="text/css" href="createProfile.css">
+<script src="4U.js"></script>
+   <div class="fieldholder">
+      <p id="usernamep" class="psubscript"></p>
+      <input id="username" required type="text" placeholder="Username" onfocus="psuperscript('username')">
+   </div>
+   <div class="fieldholder">
+      <p id="passwordp" class="psubscript"></p>
+      <input id="password" required type="password" placeholder="Password" onfocus="psuperscript('password')">
+   </div>
+   <div class="fieldholder">
+      <p id="fnamep" class="psubscript"></p>
+      <input id="fname" required type="text" placeholder="First Name (Choose how to Address you)" onfocus="psuperscript('fname')">
+   </div>
+   <div class="fieldholder">
+      <p id="lnamep" class="psubscript"></p>
+      <input id="lname" required type="text" placeholder="Last Name (Choose your Lastname)" onfocus="psuperscript('lname')">
+   </div>
+   <div class="fieldholder">
+      <p id="emailp" class="psubscript"></p>
+      <input id="email" required type="text" placeholder="Email Id" onfocus="psuperscript('email')">
+   </div>
+   <div class="fieldholder">
+      <p id="agep" class="psubscript"></p>
+      <input id="age" required type="text" placeholder="Age" onfocus="psuperscript('age')">
+   </div>
+   <div class="fieldholder">
+      <select required id="gender">
+         <option disabled selected hidden></option>
+         <option>Male</option>
+         <option>Female</option>
+      </select>
+      <label>Gender</label>
+   </div>
+   <div class="fieldholder">
+      <p id="countryp" class="psubscript"></p>
+      <input id="country" required type="text" placeholder="Country" onfocus="psuperscript('country')">
+   </div>
+   <div class="fieldholder">
+      <p id="cityp" class="psubscript"></p>
+      <input id="city" required type="text" placeholder="City" onfocus="psuperscript('city')">
+   </div>
+   <div class="selectfieldholder">
+      <select required multiple class="selectmultiple" id="relationship" onchange="updateP4DropDown('relationship')">
+         <option>Never been in a serious Relationship</option>
+         <option>Never Married</option>
+         <option>In a Committed Relationship</option>
+         <option>Currently Single</option>
+         <option>Currently Married</option>
+         <option>Currently Divorced</option>
+         <option>Currently Widowed</option>
+         <option>It's Complicated</option>
+      </select>
+      <label class="label-selectmultiple">Relationship Status</label>
+      <p id="relationshipp"></p>
+   </div>
+   <div class="fieldholder">
+      <p id="jobp" class="psubscript"></p>
+      <input id="job" required type="text" placeholder="Job" onfocus="psuperscript('job')">
+   </div>
+   <div class="fieldholder">
+      <p id="kidsp" class="psubscript"></p>
+      <input id="kids" required type="text" placeholder="Kids" onfocus="psuperscript('kids')">
+   </div>
+   <div class="fieldholder">
+      <a href="../pics/profilepic.png" target="_blank">
+         <img src="../pics/profilepic.png" class="profilepicimg">
+      </a>
+      <p><i>The Profile Pic link gives option to choose a profile pic from an existing collection or upload one</i></p>
+   </div>
+

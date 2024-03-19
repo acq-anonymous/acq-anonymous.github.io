@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Acquaintances Anonymous</title>
+   <link rel="stylesheet" type="text/css" href="createProfile.css">
+</head>
+<body>
+   <script src="../common/tabs.js"></script>
+<header>
+   <img class="imgmedium" src="../pics/aa-simple.png" alt="Acquaintances Anonymous" onload="openTab(event, 'General')">
+</header>
+<section>
+   <article>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'General')">General Profile</button>
+        <button class="tablinks" onclick="openTab(event, '4U')">I am here 4 U</button>
+        <button class="tablinks" onclick="openTab(event, '4Me')">U are here 4 Me</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="General" class="tabcontent">
+         <iframe src=generalProfile.html></iframe>
+         <iframe style="height:30px" src=saveCancel.html></iframe>
+      </div>
+
+      <div id="4U" class="tabcontent">
+         <iframe src=4U.html></iframe>
+         <iframe style="height:30px" src=saveCancel.html></iframe>
+      </div>
+
+      <div id="4Me" class="tabcontent">
+         <iframe src=4Me.html></iframe>
+         <iframe style="height:30px" src=saveCancel.html></iframe>
+      </div>
+      
+   </article>
+</section>
+</body>
+</html>
+
+

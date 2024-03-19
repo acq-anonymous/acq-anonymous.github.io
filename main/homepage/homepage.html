@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Acquaintances Anonymous</title>
+   <link rel="stylesheet" type="text/css" href="homepage.css">
+</head>
+<body>
+   <script src="../common/tabs.js"></script>
+   <script src="homepage.js"></script>
+<header>
+   <img class="imgmedium" src="../pics/aa-simple.png" alt="Acquaintances Anonymous" onload="openTab(event,'MyPage')">
+</header>
+<section>
+   <article>
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'MyPage')">All About Me</button>
+        <button class="tablinks" onclick="openTab(event, 'AcqPage')">Acquaintances Page</button>
+        <button class="tablinks" onclick="openTab(event, 'ITalkNow')">I Want to Talk Now</button>
+        <button class="tablinks" onclick="openTab(event, 'IListenNow')">I Hear You</button>
+        <button class="tablinks" onclick="openTab(event, 'UploadNow')">Upload Now</button>
+        <button class="tablinks" onclick="updateProfile()">Update My Profile</button>
+      </div>
+
+      <!-- Tab content -->
+      <div id="MyPage" class="tabcontent">
+         <iframe src="mypage.html"></iframe>
+      </div>
+
+      <div id="AcqPage" class="tabcontent">
+         <iframe src="acqpage.html"></iframe>
+      </div>
+            
+      <div id="ITalkNow" class="tabcontent">
+         <iframe src="italknow.html"></iframe>
+      </div>
+
+      <div id="IListenNow" class="tabcontent">
+         <iframe src="ilistennow.html"></iframe>
+      </div>
+
+      <div id="UploadNow" class="tabcontent">
+         <iframe src="uploadnow.html"></iframe>
+         <p>I Have Things to Share</p>
+      </div>
+
+   </article>
+</section>
+</body>
+</html>
+
+
